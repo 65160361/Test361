@@ -4,8 +4,13 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css
+    " rel="stylesheet">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +21,9 @@
     <p>พูมมี่สุดสวย</p>
     <div class="container mt-3">
         <h2>ToDo ToJai</h2>
-        <button class="btn btn-primary" onclick="addTodo()">Add ToDo</button>
+        <div class="d-flex justify-content-end ">
+             <button class="btn btn-primary" onclick="addTodo()">Add ToDo</button>
+        </div>
 
         <table class="table table-striped">
 
@@ -192,3 +199,5 @@
 </script>
 
 </html>
+
+
