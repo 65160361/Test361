@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ToDoToJai;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[ToDoToJai::class,'index']);
+Route::post('/todo',[ToDoToJai::class,'create']);
+Route::put('/todo/{td_id}',[ToDoToJai::class,'edit']);
+Route::delete('/todo/{td_id}',[ToDoToJai::class,'destroy']);
